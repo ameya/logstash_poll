@@ -13,4 +13,4 @@ HTTP POST http://localhost:8080
 }
 
 
-The above code is a work around for polling in logstash. It will allow you to loop through a site for any new updates. 
+The above code is a work around for polling in logstash. It will allow you to loop through a site (http://jsonplaceholder.typicode.com/photos?_start=%{start}&_limit=%{chunk}) for any new updates. The pipeline calls self to update the new chunk and start position recived.
