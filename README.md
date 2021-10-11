@@ -11,3 +11,6 @@ HTTP POST http://localhost:8080
     "start":0,
     "chunk":5
 }
+
+
+The above code is a work around for polling in logstash. It will allow you to loop through a site for any new updates. 
